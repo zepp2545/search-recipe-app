@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "imageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/34d4ce95b8674c8fb6c8f08b5115464a9f180c31.17.2.3.2.jpg",
+      "description": "小鉢がもう1品ほしいなっていう時に簡単でオススメです。",
+      "ingredients": [
+        "きゅうり",
+        "ごま油",
+        "すりごま",
+        "鶏ガラスープのもと",
+        "ビニール袋"
+      ],
+      "duration": "5分以内",
+      "recipeUrl": "https://recipe.rakuten.co.jp/recipe/1200002403/",
+      "recipeTitle": "1分で！うまうま胡麻キュウリ"
+    },
+    {
+      "imageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/35a4cf78ecd120fd6400e7dda6acb7b08f9df899.06.2.3.2.jpg",
+      "description": "とろぷるな温泉たまごが簡単にできちゃいます。",
+      "ingredients": [
+        "卵"
+      ],
+      "duration": "約10分",
+      "recipeUrl": "https://recipe.rakuten.co.jp/recipe/1720001849/",
+      "recipeTitle": "温泉たまご♡お湯をわかすだけ！超簡単"
+    },
+    {
+      "imageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/b90eb2c1d9ae2f75ee4233062d8c4ff9a92eb76a.54.2.3.2.jpg",
+      "description": "ネバネバで夏バテ予防に！\nビールのあてや、冷奴、そうめん、白ご飯などと一緒に食べると美味しいです。",
+      "ingredients": [
+        "オクラ",
+        "かつお節",
+        "しょうゆ",
+        "味の素",
+        "塩（下ごしらえ用）"
+      ],
+      "duration": "5分以内",
+      "recipeUrl": "https://recipe.rakuten.co.jp/recipe/1220003007/",
+      "recipeTitle": "オクラのおかか醤油"
+    }
+  ]
+}
