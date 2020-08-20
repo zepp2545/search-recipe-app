@@ -8,31 +8,36 @@ class App extends React.Component{
   constructor(){
     super()
     this.state={
-      predictions: null,
-      selected: []
+      predictions: [],
+      selected: [],
     }
   }
 
   displayPredictions = (e) => {
     let fetched = []
-    if (e.target.value === ""){
-      this.setState({ predictions: null })
+    const inputValue = e.target.value
+  
+    if (inputValue === ""){
+      this.setState({ predictions: [] })
     }else{
-      fetched = this.ingredients.filter((item) => {
-        return item.search("^" + e.target.value) !== -1
-      })
+      for (const item of this.ingredients){
+        if (item.search("^" + inputValue) !== -1){
+          fetched.push(item)
+        }
+      }
+      setTimeout(() => this.setState({ predictions: fetched }),700)
     }
-    this.setState({ predictions: fetched })
+    
   }
 
   displaySelected = (e) => {
     const selectedWord = e.target.innerHTML
     this.state.selected.push(selectedWord)
-    // this.setState({ selected: currentSelected.push(selectedWord) })
-    this.setState({ predictions: null })
+    this.setState({ predictions: [] })
+    document.getElementById('search').value = ""
   }
 
-  ingredients=['きゅうり','にんじん','しいたけ','豚肉','きくらげ','にんにく']
+  ingredients=['きゅうり','にんじん','しいたけ','豚肉','きくらげ','にんにく','しらたき','しらうお','たまねぎ','ねぎ','ぴーまん','なす']
 
   render(){
     return(
@@ -40,7 +45,7 @@ class App extends React.Component{
         <div className="search-form">
           <div className="tag-list">
             <Selected selectedWords={this.state.selected} />
-            <SearchForm display={this.displayPredictions} predictions={this.state.predictions} displaySelected={this.displaySelected} />
+            <SearchForm display={(e) => this.displayPredictions(e)} predictions={this.state.predictions} displaySelected={(e) => this.displaySelected(e)} />
           </div>
           <button type="submit" className="submit-button">検索する</button> 
         </div>
